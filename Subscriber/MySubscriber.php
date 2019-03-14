@@ -4,6 +4,7 @@ namespace SubscriberPlugin\Subscriber;
 
 use Shopware\Core\Framework\DataAbstractionLayer\Event\EntityLoadedEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Shopware\Core\Content\Product\ProductEvents;
 
 class MySubscriber implements EventSubscriberInterface
 {
@@ -11,7 +12,7 @@ class MySubscriber implements EventSubscriberInterface
     {
         // Return the events to listen to as array like this:  <event to listen to> => <method to execute>
         return [
-            'product.loaded' => 'onProductsLoaded'
+            ProductEvents::PRODUCT_LOADED_EVENT => 'onProductsLoaded'
         ];
     }
 
