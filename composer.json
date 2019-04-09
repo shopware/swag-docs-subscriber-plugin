@@ -2,7 +2,7 @@
     "name": "swag/subscriber-plugin",
     "description": "Example plugin to register a subscriber",
     "version": "v1.0.0",
-    "type": "shopware-plugin",
+    "type": "shopware-platform-plugin",
     "license": "MIT",
     "authors": [
         {
@@ -13,7 +13,7 @@
         "shopware/platform": "dev-master"
     },
     "extra": {
-        "installer-name": "SubscriberPlugin",
+        "shopware-plugin-class": "Swag\\SubscriberPlugin\\SubscriberPlugin",
         "label": {
             "de_DE": "Beispiel Plugin um einen Subscriber zu registrieren",
             "en_GB": "Example plugin to register a subscriber"
@@ -21,6 +21,11 @@
         "description": {
             "de_DE": "Beispiel Plugin um einen Subscriber zu registrieren",
             "en_GB": "Example plugin to register a subscriber"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Swag\\SubscriberPlugin\\": "src/"
         }
     }
 }
