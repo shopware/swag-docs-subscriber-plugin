@@ -15,12 +15,12 @@
     "extra": {
         "shopware-plugin-class": "Swag\\SubscriberPlugin\\SubscriberPlugin",
         "label": {
-            "de_DE": "Beispiel Plugin um einen Subscriber zu registrieren",
-            "en_GB": "Example plugin to register a subscriber"
+            "de-DE": "Beispiel Plugin um einen Subscriber zu registrieren",
+            "en-GB": "Example plugin to register a subscriber"
         },
         "description": {
-            "de_DE": "Beispiel Plugin um einen Subscriber zu registrieren",
-            "en_GB": "Example plugin to register a subscriber"
+            "de-DE": "Beispiel Plugin um einen Subscriber zu registrieren",
+            "en-GB": "Example plugin to register a subscriber"
         }
     },
     "autoload": {
